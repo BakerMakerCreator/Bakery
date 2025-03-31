@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Mein Lieblingsbäckerei</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bakery-brown': '#8B4513',
+                        'bakery-cream': '#FFFDD0',
+                        'bakery-gold': '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bakery-cream">
+    <!-- Навигация --> 
+    <nav class="bg-bakery-brown text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Mein Lieblingsbrötchen</a>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-bakery-brown mb-8">Datenschutzerklärung</h1>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 space-y-6">
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">1. Datenschutz auf einen Blick</h2>
+                <p class="mb-4">Wir freuen uns über Ihr Interesse an unserer Bäckerei. Der Schutz Ihrer persönlichen
+                    Daten ist uns ein wichtiges Anliegen.</p>
+                <p>Diese Datenschutzerklärung informiert Sie darüber, wie wir mit Ihren personenbezogenen Daten umgehen,
+                    wenn Sie unsere Website besuchen.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">2. Verantwortliche Stelle</h2>
+                <p>Mein Lieblingsbrötchen<br>
+                    Hauptstraße 24<br>
+                    79098 Freiburg im Breisgau<br>
+                    Telefon: +49 761 12345678<br>
+                    E-Mail: info@meinlieblingsbroetchen.de</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">3. Erhebung und Verarbeitung personenbezogener
+                    Daten</h2>
+                <p class="mb-4">Bei jedem Zugriff auf unsere Website werden automatisch folgende Informationen erfasst:
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>IP-Adresse</li>
+                    <li>Datum und Uhrzeit des Zugriffs</li>
+                    <li>Name und URL der abgerufenen Datei</li>
+                    <li>Verwendeter Browser und Betriebssystem</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">4. Kontaktformular</h2>
+                <p>Wenn Sie uns über das Kontaktformular eine Nachricht senden, werden die von Ihnen angegebenen Daten
+                    (Name, E-Mail-Adresse, Nachricht) von uns verarbeitet, um Ihre Anfrage zu beantworten.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">5. Ihre Rechte</h2>
+                <p>Sie haben das Recht:</p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Auskunft über Ihre gespeicherten personenbezogenen Daten zu erhalten</li>
+                    <li>Die Berichtigung oder Löschung Ihrer personenbezogenen Daten zu verlangen</li>
+                    <li>Die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen</li>
+                    <li>Der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-bakery-brown mb-4">6. Kontakt</h2>
+                <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten wenden Sie sich
+                    bitte an:</p>
+                <p>E-Mail: datenschutz@meinlieblingsbroetchen.de</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-bakery-brown text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; <span id="currentYear"></span> Mein Lieblingsbrötchen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+
+</html>
