@@ -144,7 +144,7 @@ MIT License
 
 ## Автор
 
-Konstantin
+https://www.youtube.com/@Deutschland-Ukraine
 
 ## Поддержка
 
