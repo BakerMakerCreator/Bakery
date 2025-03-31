@@ -64,11 +64,21 @@ git config --global user.email "ваш@email.com"
    ```bash
    ssh-keygen -t ed25519 -C "ваш@email.com"
    ```
+   или
+   ```bash
+   eval $(ssh-agent -s)
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
    - Нажмите Enter для сохранения ключа в папку по умолчанию
    - Введите пароль (или нажмите Enter для пропуска)
    - Скопируйте содержимое публичного ключа:
    ```bash
    cat ~/.ssh/id_ed25519.pub
+   ```
+   или
+   ```bash
+   clip < ~/.ssh/id_ed25519.pub
    ```
 
 4. Добавьте SSH-ключ в GitHub:
